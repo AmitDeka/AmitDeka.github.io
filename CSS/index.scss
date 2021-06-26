@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'color';
+
+// body{
+//     background: brown;
+// }
+
+#background{
+    background: $homebgcolor;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    
+}
+
+.myname{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    font-size: 30px;
+    color : $homebgtextcolor;
+
+    span{
+        color: red;
+    }
+}
+
+.text{
+    background-color: aqua;
+}
