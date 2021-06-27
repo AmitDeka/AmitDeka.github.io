@@ -1,14 +1,26 @@
+@import 'color';
+@import 'mediaquery';
+
+@font-face {
+    font-family: 'RSBold';
+    src: url('/Fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RSRegular';
+    src: url('/Fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-@import 'color';
+body{
+    font-family: 'RSRegular', Fallback, sans-serif;
+}
 
-// body{
-//     background: brown;
-// }
 
 #background{
     background: $homebgcolor;
@@ -27,13 +39,22 @@
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
-    font-size: 30px;
     color : $homebgtextcolor;
 
-    span{
-        color: red;
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+        span{
+            color: red;
+        }
     }
 }
+    
 
 .text{
     background-color: aqua;
