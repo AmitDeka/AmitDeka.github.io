@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+    <div class="loader-bg">
+        <div class="loader-fg"></div>
+    </div>
+
     <div id="background">
         
     </div>
@@ -22,7 +26,12 @@
     </div> -->
 
     <!-- JavaScript -->
-    
+    <script type="text/JavaScript" src="JavaScript/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader-bg').fadeToggle();
+        }, 5000);
+    </script>
     <script type="text/JavaScript" src="JavaScript/particles.min.js"></script>
     <script type="text/JavaScript" src="JavaScript/app.js"></script>
     <script type="text/JavaScript" src="JavaScript/typed.min.js"></script>

@@ -112,3 +112,5 @@ particlesJS('background',
   }
 
 );
+
+// loader
