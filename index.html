@@ -5,49 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/index.css">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
 <body>
-    <div class="loader-bg">
-        <div class="loader-fg"></div>
-    </div>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">AmitD<span>.</span></a>
 
-    <div id="background">
-        
-    </div>
-    <div class="myname">
-        <h2>Hello</h2>
-        <h1>I'm Amit Deka</h1>
-        <h3>I am a <span class="type"></span></h3>
-    </div>
-    <!-- <div class="text" id="background">
-        <h1>Amit Deka</h1>
-        <h3>A <span class="type"></span></h3>
-    </div> -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__items">
+                       <a href="#home" class="nav__links">
+                            <i class="uil uil-estate nav__icons"></i>Home
+                       </a> 
+                    </li>
+                    <li class="nav__items">
+                        <a href="#about" class="nav__links">
+                            <i class="uil uil-user nav__icons"></i>About
+                        </a> 
+                     </li>
+                     <li class="nav__items">
+                        <a href="#skill" class="nav__links">
+                            <i class="uil uil-file nav__icons"></i>Skills
+                        </a> 
+                     </li>
+                     <li class="nav__items">
+                        <a href="#service" class="nav__links">
+                            <i class="uil uil-briefcase nav__icons"></i>Services
+                        </a> 
+                     </li>
+                     <li class="nav__items">
+                        <a href="#portfolio" class="nav__links">
+                            <i class="uil uil-scenery nav__icons"></i>Portfolio
+                        </a> 
+                     </li>
+                     <li class="nav__items">
+                        <a href="#contact" class="nav__links">
+                            <i class="uil uil-message nav__icons"></i>Contact Me
+                        </a> 
+                     </li>
+                </ul>
+                
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
 
-    <!-- JavaScript -->
-    <script type="text/JavaScript" src="JavaScript/jquery.min.js"></script>
-    <script>
-        setTimeout(function(){
-            $('.loader-bg').fadeToggle();
-        }, 5000);
-    </script>
-    <script type="text/JavaScript" src="JavaScript/particles.min.js"></script>
-    <script type="text/JavaScript" src="JavaScript/app.js"></script>
-    <script type="text/JavaScript" src="JavaScript/typed.min.js"></script>
-    <script>
-        var typed = new Typed(".type", {
-            strings: [
-                "Web Developer .",
-                "Android Developer .",
-                "Gamer ."
-            ],
-            smartBackspace: true,
-            typeSpeed: 40,
-            backSpeed: 40,
-            loop: true,
-        });
-    </script>
-    
+            <div class="nav_btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript -->
+
+    <!-- <script type="text/javascript" src="assets/js/index.js"></script>
+    <script src="/assets/js/index.js"></script> -->
+
+    <script src="assets/js/index.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+
 </body>
 </html>
