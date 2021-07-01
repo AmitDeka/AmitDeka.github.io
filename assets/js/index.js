@@ -8,6 +8,10 @@ if(navToggle){
         console.log('click')
     })
 }
+// navToggle.addEventListener('click', () =>{
+//     navMenu.classList.add('show-menu')
+//     console.log('ccclllliiiccckkkkkkkk')
+// })
 
 if(navClose){
     navClose.addEventListener('click', () => {
