@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <link rel="stylesheet" href="assets/css/aos.css">
+
 </head>
 <body>
     <!-- header -->
@@ -66,8 +68,8 @@
     <main class="main">
 
         <!-- Home -->
-        <section class="home section" id="home">
-                <div class="home__container container grid">
+        <section class="home section" id="home" data-aos="zoom-in">
+                <div class="home__container container grid" >
                     <div class="home__content grid">
                         <div class="home__social">
                             <a href="https://www.facebook.com/amit.deka.official/" target="_blank" class="home__social-icons">
@@ -119,7 +121,7 @@
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My introduction</span>
 
-            <div class="about__container container grid">
+            <div class="about__container container grid" data-aos="fade-up">
                 <img src="assets/img/undraw_Profile.svg" alt="About SVG" class="about__img">
 
                 <div class="about__data">
@@ -153,14 +155,14 @@
         </section>
         
         <!-- Skills -->
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills" >
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
 
-            <div class="skills__container container grid">
+            <div class="skills__container container grid" data-aos="zoom-in">
                 <div>
                     <!-- frontend -->
-                    <div class="skills__content skills__open">
+                    <div class="skills__content skills__open" data-aos="fade-right">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
         
@@ -206,7 +208,7 @@
                     </div>
 
                     <!-- Backend -->
-                    <div class="skills__content skills__close">
+                    <div class="skills__content skills__close" data-aos="fade-left">
                         <div class="skills__header">
                             <i class="uil uil-server-connection skills__icon"></i>
         
@@ -252,7 +254,7 @@
                     </div>
 
                     <!-- android -->
-                    <div class="skills__content skills__close">
+                    <div class="skills__content skills__close" data-aos="fade-right">
                         <div class="skills__header">
                             <i class="uil uil-android-alt skills__icon"></i>
         
@@ -288,7 +290,7 @@
                     </div>
 
                     <!-- UI/UX -->
-                    <div class="skills__content skills__close">
+                    <div class="skills__content skills__close" data-aos="fade-left">
                         <div class="skills__header">
                             <i class="uil uil-swatchbook skills__icon"></i>
         
@@ -327,11 +329,11 @@
         </section>
 
         <!-- Qualification -->
-        <section class="qualification section">
+        <section class="qualification section" >
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
-            <div class="qualification__container container">
+            <div class="qualification__container container" data-aos="zoom-in">
                 <div class="qualification__tabs">
                      <div class="qualification__button btn--flex qualification__active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
@@ -346,7 +348,7 @@
 
                 <div class="qualification__sections">
                     <!-- studies  -->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content qualification__active" data-content id="education" data-aos="fade-right">
                         <!-- 1  -->
                         <div class="qualification__data">
                             <div>
@@ -403,7 +405,7 @@
                     </div>
 
                      <!-- Jobs  -->
-                     <!-- <div class="qualification__content" data-content id="work"> -->
+                     <!-- <div class="qualification__content" data-content id="work" data-aos="fade-left"> -->
                         <!-- 1  -->
                         <!-- <div class="qualification__data">
                             <div>
@@ -431,6 +433,42 @@
         <!-- Portfolio -->
 
         <!-- Contact Me -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid" data-aos="zoom-in">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+91&nbsp;70023&nbsp;85524</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">amitdeka13@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker-info contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Nalbari, Assam, India, PIN - 781335</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
@@ -448,7 +486,7 @@
 
     <script src="assets/js/index.js"></script>
 
-    <script src="assets/js/jquery.min.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script type="text/JavaScript" src="assets/js/particles.min.js"></script>
     <script type="text/JavaScript" src="assets/js/app.js"></script>
     <script type="text/JavaScript" src="assets/js/typed.min.js"></script>
@@ -464,6 +502,10 @@
             backSpeed: 40,
             loop: true,
         });
+    </script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
