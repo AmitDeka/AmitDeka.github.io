@@ -16,7 +16,7 @@
     --first-color-second: #4834d4;
     --first-color-alt: #30336b;
     --first-color-light: #f9ca24;
-    --title-color: #ff7979;
+    --title-color: #000;
     --text-color: #130f40;
     --text-color-light: #eb4d4b;
     --input-color: #ff7979;
@@ -525,7 +525,110 @@ img{
     color: var(--first-color);
 }
 
+/* contact section  */
 
+.contact__container{
+    row-gap: 3rem;
+}
+
+.contact__information{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: 0.75rem;
+}
+
+.contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--medium-font-weight);
+}
+
+.contact__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact__input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+.contact__label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+/* .cbtn__icon{
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    transition: 0.3s;
+} */
+
+#status{
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#status.success{
+   background-color: rgb(211, 250, 153);
+   animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: var(--body-color);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    80%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
 /* Media Queries */
 @media screen and ( min-width: 968px) {
