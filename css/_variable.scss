@@ -1,0 +1,45 @@
+// hearder
+$header-height: 3rem;
+
+// colors 
+$hue-color: 230;
+$first-color: hsl($hue-color, 69%, 61%);
+$first-color-second: hsl($hue-color, 69%, 61%);
+$first-color-alt: hsl($hue-color, 57%, 53%);
+$first-color-lighter: hsl($hue-color, 92%, 85%);
+$title-color: hsl($hue-color, 8%, 15%);
+$text-color: hsl($hue-color, 8%, 45%);
+$text-color-light: hsl($hue-color, 8%, 65%);
+$input-color: hsl($hue-color, 70%, 96%);
+$body-color: hsl($hue-color, 60%, 99%);
+$container-color: #fff;
+
+// fonts and typography
+$font: 'Montserrat',
+sans-serif;
+
+$big-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+$big-font-size-968: 3rem;
+$h1-font-size-968: 2.25rem;
+$h2-font-size-968: 1.5rem;
+$h3-font-size-968: 1.25rem;
+$normal-font-size-968: 1rem;
+$small-font-size-968: 0.875rem;
+$smaller-font-size-968: 0.813rem;
+
+// font weight
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+
+// z index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
