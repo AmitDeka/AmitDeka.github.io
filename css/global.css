@@ -433,7 +433,12 @@ img {
 }
 
 .skills-list {
-  row-gap: 5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  -ms-grid-columns: (minmax(4rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
 }
 
 .skills-titleCont {
@@ -543,22 +548,10 @@ img {
 }
 
 .skills-icon-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 50px;
-  width: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  width: 42px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .skills-close .skills-list {
